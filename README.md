@@ -1,4 +1,4 @@
-# EKS
+# EKS - 2048 Game
 
 
 ## Deploy 2048 game from scratch
