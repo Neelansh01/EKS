@@ -66,7 +66,8 @@ OS: Windows
 
 ### Run the Game
 21. Copy the address from the output of: kubectl get ingress -n game-2048.
-22. Run the address as: http://<address>
+22. Run the address as: http://__address__
+
 <img width="958" alt="image" src="https://github.com/Neelansh01/EKS/assets/39853942/3a26c0d0-fa7c-4748-b4cf-89a4cab0a2b6">
 
 
