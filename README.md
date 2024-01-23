@@ -12,6 +12,8 @@ OS: Windows
 
 4. Configure AWS CLI using: aws configure -> provide access key and secret key for root user of AWS account(keep region as default region and Output as text).
    Can be found in Your AWS Account -> Security Credentials -> Access Keys
+   <img width="949" alt="image" src="https://github.com/Neelansh01/EKS/assets/39853942/c4dbdaa7-f474-4a0e-bfda-764a2f6fb964">
+
 
 ### Create Cluster
 5. Create cluster using eksctl: eksctl create cluster --name demo-cluster --region us-east-1 --fargate
@@ -25,8 +27,9 @@ OS: Windows
     --region us-east-1 \
     --name alb-sample-app \
     --namespace game-2048
+<img width="946" alt="image" src="https://github.com/Neelansh01/EKS/assets/39853942/e67cf2d7-8054-4e49-90cc-5083261b61c4">
 
-8. Deploy deploymennt, ingress and services:
+8. Deploy deployment, ingress and services:
    kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/examples/2048/2048_full.yaml
 
 ### Check if pods are created
@@ -64,6 +67,8 @@ OS: Windows
 ### Run the Game
 21. Copy the address from the output of: kubectl get ingress -n game-2048.
 22. Run the address as: http://<address>
+<img width="958" alt="image" src="https://github.com/Neelansh01/EKS/assets/39853942/3a26c0d0-fa7c-4748-b4cf-89a4cab0a2b6">
+
 
 
 
