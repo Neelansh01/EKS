@@ -44,11 +44,11 @@ OS: Windows
     --policy-name AWSLoadBalancerControllerIAMPolicy \
     --policy-document file://iam_policy.json
 15. Create IAM Role: eksctl create iamserviceaccount \
-  --cluster=<your-cluster-name> --region us-east-1\
+  --cluster=__your-cluster-name__ --region us-east-1\
   --namespace=kube-system \
   --name=aws-load-balancer-controller \
   --role-name AmazonEKSLoadBalancerControllerRole \
-  --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy \
+  --attach-policy-arn=arn:aws:iam::__your-aws-account-id__:policy/AWSLoadBalancerControllerIAMPolicy \
   --approve
     <img width="947" alt="image" src="https://github.com/Neelansh01/EKS/assets/39853942/a00853b0-efac-422a-a8b0-850180f9d858">
 
