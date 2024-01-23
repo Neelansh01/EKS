@@ -65,6 +65,8 @@ OS: Windows
   --set region=us-east-1 \
   --set vpcId=__your-vpc-id__
 20. Verify if deployment is running: kubectl get deployment -n kube-system aws-load-balancer-controller
+<img width="954" alt="image" src="https://github.com/Neelansh01/EKS-2048/assets/39853942/7bcb5d2b-959c-47f8-a1c9-5f7ad028fdec">
+
 
 ### Run the Game
 21. Copy the address from the output of: kubectl get ingress -n game-2048.
