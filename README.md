@@ -61,7 +61,7 @@ OS: Windows
   --set serviceAccount.create=false \
   --set serviceAccount.name=aws-load-balancer-controller \
   --set region=us-east-1 \
-  --set vpcId=<your-vpc-id>
+  --set vpcId=__your-vpc-id__
 20. Verify if deployment is running: kubectl get deployment -n kube-system aws-load-balancer-controller
 
 ### Run the Game
