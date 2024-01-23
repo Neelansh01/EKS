@@ -15,7 +15,9 @@ OS: Windows
 
 ### Create Cluster
 5. Create cluster using eksctl: eksctl create cluster --name demo-cluster --region us-east-1 --fargate
-6. Add the cluster to command line: aws eks update-kubeconfig --name demo-cluster --region us-east-1
+   <img width="943" alt="image" src="https://github.com/Neelansh01/EKS/assets/39853942/515b6894-ebf9-4533-a5a3-95b956ffbb4e">
+
+7. Add the cluster to command line: aws eks update-kubeconfig --name demo-cluster --region us-east-1
 
 ## Create new Fargate profile with new namespace
 7. eksctl create fargateprofile \
@@ -62,3 +64,18 @@ OS: Windows
 ### Run the Game
 21. Copy the address from the output of: kubectl get ingress -n game-2048.
 22. Run the address as: http://<address>
+
+
+
+
+
+
+
+
+
+### OPTIONAL
+
+
+
+
+
