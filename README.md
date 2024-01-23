@@ -35,7 +35,7 @@ OS: Windows
 ### Check if pods are created
 9. kubectl get pods -n game-2048
 10. kubectl get svc -n game-2048
-11. kubectl get ingress -n game-2048
+11. kubectl get ingress -n game-2048 (you will see that Address section is empty)
 
 ### Create Load Balancer
 12. Install OIDC Connector: eksctl utils associate-iam-oidc-provider --cluster demo-cluster --region us-east-1 --approve
@@ -50,6 +50,8 @@ OS: Windows
   --role-name AmazonEKSLoadBalancerControllerRole \
   --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy \
   --approve
+    <img width="947" alt="image" src="https://github.com/Neelansh01/EKS/assets/39853942/a00853b0-efac-422a-a8b0-850180f9d858">
+
 
 ### Install and Update Helm
 16. Install Helm on local system for Windows.
