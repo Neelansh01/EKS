@@ -86,7 +86,7 @@ OS: Windows
 ### OPTIONAL
 Contents of: https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.5.4/docs/examples/2048/2048_full.yaml
 
----
+
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -113,7 +113,7 @@ spec:
         name: app-2048
         ports:
         - containerPort: 80
----
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -127,7 +127,7 @@ spec:
   type: NodePort
   selector:
     app.kubernetes.io/name: app-2048
----
+
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
